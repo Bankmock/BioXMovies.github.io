@@ -1,4 +1,4 @@
-/* Reset Styles k*/
+/* Reset Styles */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
@@ -44,22 +44,6 @@ body {
     text-decoration: none;
     color: white;
     font-size: 16px;
-}
-
-/* Search Bar Styles */
-.navbar .search-bar input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-.navbar .search-bar button {
-    background-color: #e50914;
-    border: none;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
 }
 
 /* Hamburger Menu Styles */
@@ -121,11 +105,6 @@ footer p {
         display: none; /* Hide menu by default */
         width: 100%;
         text-align: center;
-    }
-
-    .navbar .search-bar {
-        margin-top: 10px;
-        width: 100%;
     }
 
     .navbar .menu-toggle {

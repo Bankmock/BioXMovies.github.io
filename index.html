@@ -34,7 +34,7 @@
     <title>XVideoA Fun - The Best Entertainment Hub</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -43,7 +43,7 @@
         <div class="logo">
             <a href="#">XVideoA Fun</a>
         </div>
-        <nav>
+        <nav class="nav-links">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Trending</a></li>
@@ -55,6 +55,12 @@
         <div class="search-bar">
             <input type="text" placeholder="Search videos...">
             <button>🔍</button>
+        </div>
+        <!-- Hamburger Menu -->
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </header>
 
@@ -78,6 +84,16 @@
         </div>
         <p>&copy; 2025 XVideoA Fun. All Rights Reserved.</p>
     </footer>
+
+    <!-- Script for Menu Toggle -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>

@@ -19,6 +19,7 @@ body {
     background-color: #111;
     padding: 15px 20px;
     color: white;
+    position: relative;
 }
 
 .navbar .logo a {
@@ -31,10 +32,12 @@ body {
 .navbar nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .navbar nav ul li {
-    margin: 0 15px;
+    margin: 0;
 }
 
 .navbar nav ul li a {
@@ -43,6 +46,7 @@ body {
     font-size: 16px;
 }
 
+/* Search Bar Styles */
 .navbar .search-bar input {
     padding: 10px;
     border: none;
@@ -58,11 +62,19 @@ body {
     border-radius: 5px;
 }
 
-.navbar .auth-buttons a {
-    color: white;
-    text-decoration: none;
-    margin-left: 15px;
-    font-weight: bold;
+/* Hamburger Menu Styles */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 /* Main Content */
@@ -105,7 +117,10 @@ footer p {
 
     .navbar nav ul {
         flex-direction: column;
-        margin-top: 10px;
+        gap: 10px;
+        display: none; /* Hide menu by default */
+        width: 100%;
+        text-align: center;
     }
 
     .navbar .search-bar {
@@ -113,7 +128,17 @@ footer p {
         width: 100%;
     }
 
-    .navbar .auth-buttons {
-        margin-top: 10px;
+    .navbar .menu-toggle {
+        display: flex; /* Show hamburger button */
+    }
+
+    .navbar .nav-links.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .navbar .nav-links a {
+        padding: 10px;
+        width: 100%;
+        display: block;
     }
 }

@@ -18,7 +18,7 @@
     }
 
     .navbar .nav-links.active {
-        display: flex; /* Show menu when active */
+        display: flex; /*k Show menu when active */
     }
 
     .navbar .nav-links a {

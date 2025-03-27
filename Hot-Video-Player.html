@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- SEO Meta Tags -->
+<meta name="title" content="XVideoA Fun - Watch the Best Viral Videos">
+<meta name="description" content="Watch trending viral videos, comedy clips, and entertainment at XVideoA Fun. Your one-stop destination for non-stop fun!">
+<meta name="keywords" content="XVideoA, viral videos, trending, entertainment, comedy, music, short clips, video streaming">
+<meta name="author" content="XVideoA Team">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+
+<!-- Open Graph (OG) Meta Tags for Social Media -->
+<meta property="og:title" content="XVideoA Fun - Watch This Viral Video">
+<meta property="og:description" content="Enjoy trending viral videos, comedy, and music clips at XVideoA Fun. Watch now!">
+<meta property="og:image" content="https://Xvideoa.fun/video/img">
+<meta property="og:video" content="https://Xvideoa.fun/video/video1.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="1280">
+<meta property="og:video:height" content="720">
+<meta property="og:url" content="https://Xvideoa.fun/Hot-Video-Player.html">
+<meta property="og:type" content="video.other">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="player">
+<meta name="twitter:title" content="XVideoA Fun - Trending Viral Video">
+<meta name="twitter:description" content="Watch this trending viral video on XVideoA Fun and enjoy unlimited entertainment!">
+<meta name="twitter:image" content="https://Xvideoa.fun/video/img">
+<meta name="twitter:player" content="https://Xvideoa.fun/video/video1.mp4">
+<meta name="twitter:player:width" content="1280">
+<meta name="twitter:player:height" content="720">
+<meta name="twitter:site" content="@XVideoA">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="../img/favicon.webp">
+
+    <title>XVideoA Fun - The Best Entertainment Hub</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/video.css">
+        
+        <script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('groleegni.net',9128405,document.createElement('script'))</script>
+</head>
+<body>
+	<!-- ads by Eonads -->  
+<a href="https://www.eonads.com" class="ex2" target="_blank">Ads by Eonads</a>
+<ins class="e300x250" id="300x250" data-revive-hash="0fa16dfcce039281eb6b5910f552474f" data-revive-zoneid="63175" data-revive-id="f87497be83f6ed6b52c3b340d803ae0d"></ins>
+<script async src="//network.eonads.com/adserver/www/delivery/asyncjs.php"></script><!-- ads by Eonads -->
+                     
+  <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="https://xvideoa.fun/">X<span class="b">VideoA</span><span class="r">.Fun</span></a>
+        </div>
+    </header>
+    
+    
+    <!-- Main Content -->
+    <main>
+    	<!-- ads by Eonads -->  
+<a href="https://www.eonads.com" class="ex2" target="_blank">Ads by Eonads</a>
+<ins class="e300x250" id="300x250" data-revive-hash="0fa16dfcce039281eb6b5910f552474f" data-revive-zoneid="63174" data-revive-id="f87497be83f6ed6b52c3b340d803ae0d"></ins>
+<script async src="//network.eonads.com/adserver/www/delivery/asyncjs.php"></script><!-- ads by Eonads -->
+                     
+        <section>
+      <h2>Video Player</h2>
+    <div id="video-container"></div>
+	<!-- ads by Eonads -->  
+<a href="https://www.eonads.com" class="ex5" target="_blank">Ads by Eonads</a>
+<ins class="e336x280" id="336x280" data-revive-hash="0fa16dfcce039281eb6b5910f552474f" data-revive-zoneid="63173" data-revive-id="f87497be83f6ed6b52c3b340d803ae0d"></ins>
+<script async src="//network.eonads.com/adserver/www/delivery/asyncjs.php"></script><!-- ads by Eonads -->
+    <script>
+        function loadVideo() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const videoId = urlParams.get("video");
+
+            if (!videoId) {
+                document.getElementById("video-container").innerHTML = "<p>Invalid Video ID</p>";
+                return;
+            }
+
+            // Create Rumble embed script dynamically
+            let scriptTag = document.createElement("script");
+            scriptTag.innerHTML = `!function(r,u,m,b,l,e){r._Rumble=b,r[b]||(r[b]=function(){(r[b]._=r[b]._||[]).push(arguments);if(r[b]._.length==1){l=u.createElement(m),e=u.getElementsByTagName(m)[0],l.async=1,l.src="https://rumble.com/embedJS/u1ot1yk.${videoId}/?url="+encodeURIComponent(location.href)+"&args="+encodeURIComponent(JSON.stringify([].slice.apply(arguments))),e.parentNode.insertBefore(l,e)}})}(window, document, "script", "Rumble");`;
+
+            let divTag = document.createElement("div");
+            divTag.id = "rumble_" + videoId;
+
+            document.getElementById("video-container").appendChild(divTag);
+            document.getElementById("video-container").appendChild(scriptTag);
+
+            let playScript = document.createElement("script");
+            playScript.innerHTML = `Rumble("play", {"video":"${videoId}","div":"rumble_${videoId}"});`;
+            document.getElementById("video-container").appendChild(playScript);
+        }
+
+        loadVideo();
+    </script>
+    
+
+
+
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="">Terms</a>
+            <a href="privacy-policy.html">Privacy</a>
+            <a href="#contact.html">Contact</a>
+        </div>
+        <p>&copy; 2025 XVideoA Fun. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function openVideo(videoId) {
+            window.open("post/Hot-Video-Player.html?video=" + videoId, "_blank");
+        }
+    </script>
+</body>
+</html>

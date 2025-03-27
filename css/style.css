@@ -1,3 +1,11 @@
+
+.ads {
+	
+	text-align:center;
+overflow-x:scroll;
+	}
+
+
 /*Mobile view */
 @media (max-width: 768px) {
     .navbar {

@@ -1,6 +1,6 @@
 
 .ads {
-	
+	overflow-x: scroll;
 margin-Left: 60;
 padding:600;
         align-items: center;
